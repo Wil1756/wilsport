@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "william Opio",
-  description: "Software Engineer building AI applications,Machine Learning systems and modern web experiences.",
+  description: "Software Engineer building modern web applications and cloud solutions",
 };
 
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode}>) {
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
       lang="en"
       suppressHydrationWarning
     >
-      <body className={geistSans.className}>
+      <body className={`${geistSans.className} bg-zinc-950 text-zinc-50 antialiased`}>
         <Providers>{children}</Providers>
       </body>
     </html>
