@@ -53,4 +53,4 @@ I'm focused on growing toward **Cloud Engineering and Solutions Engineering**, c
 
 ---
 
-> Building software. Solving problems. Learning continuously.
+Building software. Solving problems. Learning continuously.
