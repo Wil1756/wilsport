@@ -53,12 +53,4 @@ I'm focused on growing toward **Cloud Engineering and Solutions Engineering**, c
 
 ---
 
-## Connect
-
-[GitHub](https://github.com/Wil1756) ·
-[LinkedIn](www.linkedin.com/in/william-opio) ·
-[Medium]([YOUR_MEDIUM_URL](https://medium.com/@johnwilliams1756))
-
----
-
 > Building software. Solving problems. Learning continuously.
