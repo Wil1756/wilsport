@@ -1,3 +1,4 @@
+import { BlogSection } from "@/components/blog/BlogSection";
 import { Hero } from "@/components/hero/Hero";
 import { Navbar } from "@/components/layout/Navbar";
 import { ProjectsSection } from "@/components/projects/ProjectsSection";
@@ -10,6 +11,7 @@ export default function Home(){
       <main className="min-h-screen">
         <Hero/>
         <ProjectsSection/>
+        <BlogSection/>
       </main>
     </>
     
