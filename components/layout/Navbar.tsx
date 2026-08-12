@@ -78,7 +78,7 @@ export function Navbar(){
                     {/* {actions} */}
                     <div className="flex items-center gap">
                         <div className="hidden md:block">
-                            <ThemeToggle/>
+                            {/* <ThemeToggle/> */}
                         </div>
 
                         <MobileMenu/>

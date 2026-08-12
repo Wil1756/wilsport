@@ -12,7 +12,7 @@ export function ProjectsSection(){
                     <h2 id="projects-heading" className="text-lg font-semibold tracking-tight text-white">
                         Selected Projects
                     </h2>
-                    <Link href="/projects" className="group inline-flex shrink-0 items-center gap-1 text-sm text-zinc-400 transition-colors hover:text-white">
+                    <Link href="" className="group inline-flex shrink-0 items-center gap-1 text-sm text-zinc-400 transition-colors hover:text-white">
                         <span>View all projects</span>
                         <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1"/>
                     </Link>
