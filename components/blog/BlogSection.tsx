@@ -13,7 +13,7 @@ export async function BlogSection(){
             className="scroll-mt-8"
         >
             <div className="container mx-auto max-w-5xl px-6">
-                <div className="flex items-center justify-between gap-6 mt-8">
+                <div className="flex items-center justify-between gap-6 mt-10">
                     <h2 id="blog-heading" className="text-lg font-semibold tracking-tight text-white">Latest Blog Posts</h2>
 
                     {mediumProfileUrl && (
@@ -30,7 +30,7 @@ export async function BlogSection(){
                 <div className="mt-5">
                     <BlogList posts={posts}/>
                 </div>
-                <div aria-hidden="true" className="mt-8 h-px w-full gg-zinc-800"/>
+                <div aria-hidden="true" className="mt-10 h-px w-full bg-zinc-800"></div>
             </div>
         </section>
     )
