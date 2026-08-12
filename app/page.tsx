@@ -1,3 +1,4 @@
+import { About } from "@/components/about/About";
 import { BlogSection } from "@/components/blog/BlogSection";
 import { ExperienceTImeline } from "@/components/experience/ExperienceTimeline";
 import { Hero } from "@/components/hero/Hero";
@@ -14,6 +15,7 @@ export default function Home(){
         <ProjectsSection/>
         <BlogSection/>
         <ExperienceTImeline/>
+        <About/>
       </main>
     </>
     
