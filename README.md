@@ -56,8 +56,8 @@ I'm focused on growing toward **Cloud Engineering and Solutions Engineering**, c
 ## Connect
 
 [GitHub](https://github.com/Wil1756) ·
-[LinkedIn](YOUR_LINKEDIN_URL) ·
-[Medium](YOUR_MEDIUM_URL)
+[LinkedIn](www.linkedin.com/in/william-opio) ·
+[Medium]([YOUR_MEDIUM_URL](https://medium.com/@johnwilliams1756))
 
 ---
 
