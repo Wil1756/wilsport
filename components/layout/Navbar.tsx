@@ -13,33 +13,77 @@ export function Navbar(){
     useEffect(()=> {
         const sections = NAV_ITEMS.filter((item)=> item.href.startsWith('#'))
         .map((item) => document.querySelector(item.href)
-    ).filter((section): section is Element => section !== null)
+    ).filter((section): section is HTMLElement => section !== null)
 
     if(sections.length === 0){
         return;
     }
 
-    const observer = new IntersectionObserver((entries) => {
-        const visibileSections = entries.filter((entry) => entry.isIntersecting
-            ).sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    // const observer = new IntersectionObserver((entries) => {
+    //     const visibileSections = entries.filter((entry) => entry.isIntersecting
+    //         ).sort((a, b) => b.intersectionRatio - a.intersectionRatio);
             
-        const current = visibileSections[0];
+    //     const current = visibileSections[0];
 
-        if (current){
-            setActive(`#${current.target.id}`);
-        }
+    //     if (current){
+    //         setActive(`#${current.target.id}`);
+    //     }
 
-    },
-        {
-            rootMargin: "-25% 0px -65% 0px",
-            threshold: [0, 0.25, 0.5, 1],
-        }
-    )
+    // },
+    //     {
+    //         rootMargin: "-25% 0px -65% 0px",
+    //         threshold: [0, 0.25, 0.5, 1],
+    //     }
+    // )
     
-    sections.forEach((section)=> observer.observe(section));
+    // sections.forEach((section)=> observer.observe(section));
 
-    return ()=> observer.disconnect();
+    // return ()=> observer.disconnect();
 
+        const updateAtiveSection = ()=> {
+            const scrollPosition = window.scrollY
+
+            if (scrollPosition < 100){
+                setActive("#home")
+                return
+            }
+        }
+
+        const updateActiveSection = () => {
+            const scrollPosition = window.scrollY;
+        
+            if (scrollPosition < 100) {
+              setActive("#home");
+              return;
+            }
+        
+            const currentSection = sections.reduce<HTMLElement | null>(
+              (current, section) => {
+                const sectionTop = section.offsetTop - 160;
+        
+                if (scrollPosition >= sectionTop) {
+                  return section;
+                }
+        
+                return current;
+              },
+              sections[0],
+            );
+        
+            if (currentSection) {
+              setActive(`#${currentSection.id}`);
+            }
+          };
+        
+          updateActiveSection();
+        
+          window.addEventListener("scroll", updateActiveSection, {
+            passive: true,
+          });
+        
+          return () => {
+            window.removeEventListener("scroll", updateActiveSection);
+          };
     },[]);
 
     return(
@@ -50,10 +94,10 @@ export function Navbar(){
             <div className="container mx-auto max-w-5xl px-6">
                 <div className="flex justify-end">
                     {/* {desktop nav} */}
-                    {/* <nav
+                    <nav
                         aria-label="Primary Navigation"
                         className="hidden md:block"
-                    > */}
+                    >
                         <ul className="flex items-center gap-x-6">
                             {NAV_ITEMS.map((item)=> {
                                 const isActive = active === item.href;
@@ -73,7 +117,7 @@ export function Navbar(){
                                 )
                             })}
                         </ul>
-                    {/* </nav> */}
+                    </nav>
 
                     {/* {actions} */}
                     <div className="flex items-center gap">

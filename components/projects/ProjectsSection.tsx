@@ -23,8 +23,6 @@ export function ProjectsSection(){
                         <ProjectItem key={project.title} project={project}/>
                     ))}
                 </div>
-                {/* section separator */}
-                <div aria-hidden="true" className="mt-10 h-px w-full bg-zinc-800"></div>
             </div>
         </section>
     )
