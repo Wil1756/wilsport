@@ -43,7 +43,7 @@ export function MobileMenu(){
                            {NAV_ITEMS.map((item) => (
                             <li key={item.href}>
                                 <a 
-                                    href=""
+                                    href={item.href}
                                     onClick={closeMenu}
                                     className="block rounded-lg px-3 py-3 text-sm text-zinc-400 transition-colors hover:bg-zinc-900
                                     hover:text-white"

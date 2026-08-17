@@ -5,7 +5,7 @@ import Image from "next/image";
 export function Hero(){
     return(
         <section
-            is="home"
+            id="home"
             className="scroll-mt-8 pt-12 pb-12 sm:pt-14 sm:pb-14"
         >
             <div className="container mx-auto max-w-5xl px-6">

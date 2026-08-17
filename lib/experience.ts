@@ -17,7 +17,7 @@ export const EXPERIENCE: readonly Experience[] = [
     },
     {
         period:"2014 - 2020",
-        title:"Civil Engineer/Manager",
-        description:"Worked on a couple high rise construction projects at heart of Kampala Uganda, collaborating with multidisciplinary teams and managing technical project requirements."
+        title:"Civil Engineer",
+        description:"Worked on a couple of high rise construction projects at heart of Kampala Uganda, collaborating with multidisciplinary teams and managing technical project requirements."
     }
 ]
