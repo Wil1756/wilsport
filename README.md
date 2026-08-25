@@ -41,9 +41,9 @@ My background is in Civil Engineering, which shaped how I approach software: und
 
 ## Background
 
-I started my career in **Civil Engineering**, working on high-rise construction projects before transitioning into software engineering.
+I started my career in **Civil Engineering**, working on high rise construction projects before transitioning into software engineering.
 
-That experience continues to influence how I build software — with an emphasis on structure, reliability, problem solving, and systems thinking.
+That experience continues to influence how I build software with an emphasis on structure, reliability, problem solving, and systems thinking.
 
 ---
 
