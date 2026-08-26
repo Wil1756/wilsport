@@ -44,7 +44,8 @@ export function About (){
                     <IoIosMail size={18} strokeWidth={1.8}/>
                    </Link>
                 </div>
-                <div aria-hidden="true" className="mt-10 h-px w-full bg-zinc-800"></div>
+                <div className="mt-12"/>
+                {/* <div aria-hidden="true" className="mt-10 h-px w-full bg-zinc-800"></div> */}
             </div>
         </section>
     )
